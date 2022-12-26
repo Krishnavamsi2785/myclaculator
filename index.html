@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <link rel="stylesheet" type="text/css" href="cal.css" media=”screen” />
+    
+    <title>my calculator</title>
+    <style>
+body{
+    background:orange;
+    
+}
+*{
+    box-sizing:boarder-box;
+   -webkit-box- sizing:boarder-box;
+   -moz-box -sizing:boarder-box;
+}
+.wrap{
+    width:300px;
+    margin:auto;
+    height:auto;
+    background:black;
+    padding:15px;
+}
+
+input[type=text]{
+     width:95%;
+     padding:10px;
+     font-size:22px;
+     font-weight:bold;
+     margin-top:20px;
+     border-radius:15px;
+    
+}
+input[type=button]{
+    width:70px;
+    background:skyblue;
+     padding:10px;
+     font-size:22px;
+     font-weight:bold;    
+     border-radius:50px;
+}
+#del{
+    width:95%;
+   }
+</style>
+
+    
+    
+    
+</head>
+<body>
+    
+    <div class="wrap">
+    <form name="cal">
+        <input type="text" name="disply">
+        <br><br>
+        <input type="button" value="9" onclick  ="cal.disply.value+='9'">
+        <input type="button" value="8" onclick  ="cal.disply.value+='8'">
+        <input type="button" value="7" onclick  ="cal.disply.value+='7'">
+        <input type="button" value="+" onclick  ="cal.disply.value+='+'">
+        <br><br>
+        <input type="button" value="6" onclick  ="cal.disply.value+='6'">
+        <input type="button" value="5" onclick  ="cal.disply.value+='5'">
+        <input type="button" value="4" onclick  ="cal.disply.value+='4'">
+        <input type="button" value="-" onclick  ="cal.disply.value+='-'">
+        <br><br>
+        <input type="button" value="3" onclick  ="cal.disply.value+='3'">
+        <input type="button" value="2" onclick  ="cal.disply.value+='2'">
+        <input type="button" value="1" onclick  ="cal.disply.value+='1'">
+        <input type="button" value="x" onclick  ="cal.disply.value+='*'">
+        <br><br>
+        <input type="button" value="0" onclick  ="cal.disply.value+='0'">
+        <input type="button" value="/" onclick  ="cal.disply.value+='/'">
+        <input type="button" value="%" onclick  ="cal.disply.value+='%'">
+        <input type="button" value="="onclick  ="cal.disply.value=eval(cal.disply.value)">
+        <br><br>
+        <input type="button" value="CLEAR" onclick  ="cal.disply.value=''" id="del">
+        
+    </form>
+    
+    </div>
+    <h3>vk calculator</h3>
+</body>
+</html>
